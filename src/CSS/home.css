@@ -4,6 +4,47 @@
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 10px 20px;
+}
+
+.navbar li img {
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 50px;
+  
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: #f2a41f;
+}
+
+.navbar a.active {
+  color: #f2a41f;
+  border-bottom: 2px solid #f2a41f;
+  padding-bottom: 2px;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -14,6 +55,7 @@ html, body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: 1;
 }
 .legenda {
   position: absolute;
@@ -21,8 +63,8 @@ html, body {
   left: 0;
   transform: translateY(-50%);
   padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  background-color: transparent;
+  color: black;
   font-size: 1.5rem;
   opacity: 0;
   transition: opacity 1s ease;
