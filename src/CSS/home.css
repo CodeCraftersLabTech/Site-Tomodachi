@@ -36,6 +36,7 @@
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .navbar a:hover {
@@ -67,7 +68,9 @@ body {
   padding: 1rem 2rem;
   background-color: transparent;
   color:#f2a41f ; 
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+
   opacity: 0;
   transition: opacity 1s ease;
 }
