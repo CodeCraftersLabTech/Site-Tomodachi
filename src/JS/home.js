@@ -12,7 +12,7 @@ function mostrarSlide(index) {
   legendas.forEach(legenda => legenda.classList.remove('ativo'));
   setTimeout(() => {
     legendas[index].classList.add('ativo');
-  }, 1000); // Mostra a legenda com atraso
+  }, 1000); 
 }
 
 function proximoSlide() {
