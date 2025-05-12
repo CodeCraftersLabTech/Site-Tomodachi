@@ -20,5 +20,5 @@ function proximoSlide() {
   mostrarSlide(indexAtual);
 }
 
-mostrarSlide(indexAtual); // Inicial
-setInterval(proximoSlide, 4000); // Troca a cada 3 segundos
+mostrarSlide(indexAtual); 
+setInterval(proximoSlide, 4000); 
