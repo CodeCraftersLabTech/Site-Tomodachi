@@ -70,7 +70,6 @@ body {
   color:#f2a41f ; 
   font-size: 3rem;
   font-weight: bold;
-
   opacity: 0;
   transition: opacity 1s ease;
 }
