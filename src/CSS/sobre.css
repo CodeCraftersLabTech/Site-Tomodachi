@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: rgba(4, 52, 84, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+  
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.navbar li img {
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 100px;
+    
+}
+  
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+  
+.navbar a:hover {
+    color: #f2a41f;
+}
+  
+.navbar a.active {
+    color: #f2a41f;
+    border-bottom: 2px solid #f2a41f;
+    padding-bottom: 2px;
+}
+  
+.containerSobreNos{
+    text-align: center;
+    background-color:rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: larger;
+    padding: 20px;
+    font-family: FontePrincipal;
+    position: relative; 
+    text-align: center;
+}
+
+.texto-sobreposto {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 1.5rem; 
+    background-color: rgba(0, 0, 0, 0.5);/*Background semi-transparente */
+     
+    padding: 10px 20px; 
+    border-radius: 10px;
+}
+
+.imgDoSobre{
+    width: 100%;
+      height: auto;
+      display: block;
+    
+}
+
+.fundo-imagem {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px; /* espaço interno para o conteúdo não colar nas bordas */
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+  
+.fundo-imagem .conteudo {
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente atrás do texto */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .imgTextoSobreNos{
+    display: block;
+    margin: 20px auto; 
+    max-width: 50%;
+    height: auto;
+    
+    
+}
