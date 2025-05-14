@@ -50,7 +50,7 @@
 }
 
 /* Link ativo */
-#ativo {
+.ativo {
   color: #f2a41f;
   text-decoration: underline;
 }
