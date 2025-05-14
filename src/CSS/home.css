@@ -5,8 +5,11 @@
 }
 /* HEADER */
 .header {
-  background-color: #052d45;
+  background: rgba(255, 255, 255, 0.12);
   padding: 15px 40px;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
 }
 
 .navbar {
