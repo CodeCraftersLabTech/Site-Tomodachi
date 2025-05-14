@@ -5,9 +5,9 @@ function filtrarCardapio(categoria) {
     const cat = prato.getAttribute('data-categoria');
 
     if (cat === categoria) {
-      prato.classList.remove('oculto');
+      prato.classList.remove('hidden');
     } else {
-      prato.classList.add('oculto');
+      prato.classList.add('hidden');
     }
   });
 }

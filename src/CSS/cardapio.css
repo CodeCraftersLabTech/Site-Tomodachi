@@ -128,7 +128,8 @@ main {
   height: 310px;
   background-color: #ffffff;
   box-shadow: 1px 1px 10px #085283;
-  border-radius: 5%;
+  border-radius: 5%; 
+  overflow: hidden;     
 }
 
 .cardPratos img {
@@ -165,7 +166,7 @@ main {
 
 }
 
-.oculto {
+.hidden {
   display: none;
 }
 
