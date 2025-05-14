@@ -164,3 +164,8 @@ main {
   transition: 0.5s;
 
 }
+
+.oculto {
+  display: none;
+}
+
