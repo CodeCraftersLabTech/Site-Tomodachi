@@ -61,7 +61,6 @@
   font-size: 250%;
   margin-top: 3% auto 0;
   color: #033e5e;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300; 
 }
 
@@ -71,7 +70,7 @@
   text-align: center;
   color: #043454;
   margin-top: 25%;
-  font-family:'Monteserrat', sans-serif;
+  
 }
 .form-container {
   background-color: #fff;
