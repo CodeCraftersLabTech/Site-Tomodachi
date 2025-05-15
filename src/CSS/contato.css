@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 /* HEADER */
 .header {
@@ -54,24 +55,22 @@
  
 /* final header */
 
+
 .titulo-contato {
   text-align: center;
   font-size: 250%;
   margin-top: 3% auto 0;
   color: #033e5e;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300; 
 }
 
-
 .form-container h1 {
-  font-size: 250%;
   font-weight: 200;
-  margin-bottom: 20%;
+  margin-bottom: 20px;
   text-align: center;
   color: #043454;
   margin-top: 25%;
-  font-family:'Monteserrat', sans-serif;
+  
 }
 .form-container {
   background-color: #fff;
@@ -96,7 +95,7 @@
 
 main{
     border: 10%;
-    padding-top: 10%;;
+    padding-top: 10%;
 
 }
 
@@ -109,8 +108,8 @@ form{
 form label {
   display: block;
   text-align: left;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  margin-top: 40px;
+  margin-bottom: 10px;
   font-weight: bold;
   color: #043454;
 
@@ -119,7 +118,6 @@ form label {
 
 }
 
-/* campo de entrada de texto */
 form input,
 form textarea {
   width: 100%;
@@ -131,16 +129,13 @@ form textarea {
   box-sizing: border-box;
 }
 
-/* altura */
 form textarea {
   height: 150px;        
   resize: none;         
   
 }
 
-/* Botão para enviar */
 button {
-  
   background-color: #033e5e;
   color: #f2a41f;
   padding: 3% 10%;

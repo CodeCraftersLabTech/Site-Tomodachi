@@ -146,19 +146,8 @@ main {
     flex-direction: column;
     gap: 16px;
 }
-
 .h2Sobre {
     margin-top: 20px;
-}
-
-.footer {
-    background-color: #043454;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative; 
-    bottom: 0; 
-    width: 100%;
 }
 
 #titulosTexto{
@@ -204,7 +193,6 @@ main {
   color: white;
   text-decoration: none;
 }
-
 @media (max-width: 900px) {
   .conteudo {
     flex-direction: column;
@@ -236,28 +224,4 @@ main {
   .rede-item {
     justify-content: center;
   }
-}
-
-/* Arrumando os titulos */
-
-#primeiroTitulo{
-  font-size: 2.5rem;
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-#subtitulo{
-  font-size: 1.5rem;
-  
-}
-
-#titulosTexto{
-  font-size: 2.0rem;
-  margin-top: 20px;
-}
-
-#paragTexto{
-  font-size: 1.0rem;
-  
-
 }
