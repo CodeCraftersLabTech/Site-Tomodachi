@@ -56,7 +56,7 @@
 /* final header */
 
 body{
-  background-color:#f5fffb ;
+  background-color:#f2f6f4;
 }
 #topo{
   content: '';
@@ -124,11 +124,12 @@ main {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  width: 250px;
-  height: 300px;
+  width: 270px;
+  height: 310px;
   background-color: #ffffff;
-  box-shadow: 7px 7px 9px rgb(77, 22, 42, 0.5);
-  border-radius: 5%;
+  box-shadow: 1px 1px 10px #085283;
+  border-radius: 5%; 
+  overflow: hidden;     
 }
 
 .cardPratos img {
@@ -141,6 +142,7 @@ main {
   height: 250px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
+  
 }
 
 .cardPratos h3 {
@@ -155,16 +157,41 @@ main {
   font-weight: 500;
   font-size: 18px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .cardPratos:hover {
-  transition: 1s;
-  border: 1px solid #f2a41f;
-  cursor: pointer;
-}
-
-.cardPratos:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.5s;
 
+}
+
+/* ANIMAÇÃO DO CARDAPIO */
+.cardPratos {
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+  position: relative; /* sombra padrão */
+}
+
+.exit {
+  opacity: 0.7;
+  transform: scale(0.9);         
+  box-shadow: none;              
+  
+}
+
+.hidden {
+  display: none;
+}
+
+.enter {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+.show {
+  opacity: 1;
+  transform: scale(1);
+  display: block;
+  transition: all 0.2s ease;
 }
