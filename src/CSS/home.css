@@ -103,7 +103,7 @@ body {
 .footer {
     background-color: #043454;
     color: white;
-    text-align: left;
+    
     padding: 20px;
     position: relative; 
     bottom: 0; 
@@ -115,7 +115,7 @@ body {
 .logo{
   padding-left: 78px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   
   
@@ -123,6 +123,7 @@ body {
 
 #imgfooter{
     height: 100px; 
+  align-items: center;
 }
 
 .logo p {
@@ -155,9 +156,34 @@ body {
 @media (max-width: 900px) {
   .footer {
     flex-direction: column;
-    gap: 24px;
-  }
-  .contato {
+    align-items: center;
     text-align: center;
-    padding-left: 100px;
+    
   }
+  .logo {
+    padding-left: 0;      
+    margin: 40px;    /* Remove o padding da direita */
+    align-items: center;  /* Centraliza o conteúdo da logo */
+    width: 100%;
+    flex-direction: column; /* garante coluna */
+    justify-content: center; /* centraliza verticalmente */
+    text-align: center; 
+    align-items: center;
+    
+  }
+  .contato, .redes {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .rede-item {
+    justify-content: center;
+  }
+  #imgfooter {
+    display: block;
+    margin: 0 auto;
+    position: static;
+       
+    
+  }
+}
