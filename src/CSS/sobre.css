@@ -7,7 +7,6 @@
 .header {
   background: #043454;
   padding: 15px 40px;
-  z-index: 10;
   position: absolute;
   width: 100%;
 }
@@ -55,42 +54,46 @@
  
 /* final header */
 
+html, body {
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Conteudo da pagina  */
 .containerSobreNos{
-    text-align: center;
-    background-color:rgb(0, 0, 0);
-    color: aliceblue;
-    font-size: larger;
-    padding: 20px;
-    font-family: FontePrincipal;
-    position: relative; 
-    text-align: center;
+  text-align: center;
+  padding: 20px;
+  font-family: FontePrincipal;
+  position: relative; 
+  text-align: center;
     
 }
 
 .texto-sobreposto {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: black; 
-    font-size: 1.5rem; 
-    
-     margin-top: 80px; 
-    padding: 10px 20px; 
-    border-radius: 10px;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: black; 
+  font-size: 1.5rem; 
+  margin-top: 80px; 
+  padding: 10px 20px; 
+  border-radius: 10px;
 }
 
-
-
-
-  
-
-
 .imgTextoSobreNos{
-    display: block;
-    margin: 20px auto; 
-    max-width: 50%;
-    height: auto;
+  display: block;
+  margin: 20px auto; 
+  max-width: 50%;
+  height: auto;
     
 }
 
@@ -105,14 +108,12 @@
     padding: 20px;
     font-family: FontePrincipal;
     color: black;
-    background-color: #f5fffb;
 }
 .conteudo {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     gap: 40px;
-    background-color: #f5fffb;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
@@ -145,33 +146,74 @@
     gap: 16px;
 }
 
-@media (max-width: 900px) {
-    .conteudo {
-        flex-direction: column;
-        align-items: center;
-    }
-    .lado-img, .lado-texto {
-        width: 100%;
-        max-width: 100%;
-    }
-    .imgTextoSobreNos {
-        max-width: 90vw;
-        height: auto;
-        min-height: unset;
-        max-height: 300px;
-    }
-}
-
 .h2Sobre {
     margin-top: 20px;
 }
 
+/* FOOTER */
 .footer {
-    background-color: #043454;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative; 
-    bottom: 0; 
+  background-color: #043454;
+  color: white;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  display: flex;          
+  justify-content: space-around;
+  align-items: center;
+  margin: 0; 
+}
+
+.logo-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-footer img{
+  height: 100px; 
+}
+
+.rede-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.rede-item a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lado-img, .lado-texto {
     width: 100%;
+    max-width: 100%;
+  }
+  .imgTextoSobreNos {
+    max-width: 90vw;
+    height: auto;
+    min-height: unset;
+    max-height: 300px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .contato, .redes {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rede-item {
+    justify-content: center;
+  }
 }

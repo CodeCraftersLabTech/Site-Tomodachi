@@ -195,3 +195,72 @@ main {
   display: block;
   transition: all 0.2s ease;
 }
+
+/* FOOTER */
+.footer {
+  background-color: #043454;
+  color: white;
+  padding: 20px;
+  bottom: 0; 
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  display: flex;          
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.logo-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-footer img{
+  height: 100px; 
+}
+
+.rede-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.rede-item a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lado-img, .lado-texto {
+    width: 100%;
+    max-width: 100%;
+  }
+  .imgTextoSobreNos {
+    max-width: 90vw;
+    height: auto;
+    min-height: unset;
+    max-height: 300px;
+  }
+  
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .contato, .redes {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rede-item {
+    justify-content: center;
+  }
+}
