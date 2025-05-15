@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HEADER */
+.header {
+  background:#043454;
+  padding: 15px 40px;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: #f2a41f;
+}
+/* Link ativo */
+#ativo {
+  color: #f2a41f;
+  text-decoration: underline;
+}
+ 
+/* final header */
+
+.titulo-contato {
+  text-align: center;
+  font-size: 250%;
+  margin-top: 3% auto 0;
+  color: #033e5e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; 
+}
+
+
+.form-container h1 {
+  font-size: 250%;
+  font-weight: 200;
+  margin-bottom: 20%;
+  text-align: center;
+  color: #043454;
+  margin-top: 25%;
+  font-family:'Monteserrat', sans-serif;
+}
+.form-container {
+  background-color: #fff;
+  width: 80%; /* Largura do formulário */
+  max-width: 40%; /* Limita para não ficar gigante em telas grandes */
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 2%;
+   /* Borda brilhante */
+
+ border: 2px solid #043454;
+
+  /* Efeito neon com múltiplas sombras */
+  box-shadow:
+    0 0 20px #043454,
+    0 0 40px #043454,
+    0 0 60px #043454;
+  box-sizing: border-box;
+  
+   
+}
+
+main{
+    border: 10%;
+    padding-top: 10%;;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-weight: bold;
+  color: #043454;
+
+ 
+
+
+}
+
+/* campo de entrada de texto */
+form input,
+form textarea {
+  width: 100%;
+  padding: 3%;
+  margin-top: 3%;
+  border: 1% solid #ccc;
+  margin-bottom: 4%;
+  font-size: 90%;
+  box-sizing: border-box;
+}
+
+/* altura */
+form textarea {
+  height: 150px;        
+  resize: none;         
+  
+}
+
+/* Botão para enviar */
+button {
+  
+  background-color: #033e5e;
+  color: #f2a41f;
+  padding: 3% 10%;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin: 15% auto 0;
+  margin-left: 35;
+}
+
+
+

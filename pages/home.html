@@ -9,27 +9,87 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <nav class="navbar">
-      <ul>
-        <li><img src="../src/assets/img/logo.png" alt=""></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="cardapio.html">Cardápio</a></li>
-        <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../src/assets/img/logo.png" alt="Logo">
+    </div>
+    <ul class="menu">
+      <li><a id ="ativo"href="#">Home</a></li>
+      <li><a href="cardapio.html">Cardápio</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
   </header>
-
   <!-- carrosel topo -->
   <div class="carrossel">
-    <img src="../src/assets/img/cardapio/robata-de-vieira-canadense-com-salmao.webp"  class="slide ativo" alt="Imagem 1">
-    <img src="../src/assets/img/cardapio/carpaccio_salmão.avif" class="slide" alt="Imagem 2">
-    <img src="../src/assets/img/comida-japonesa.jpg" class="slide" alt="Imagem 3">
-
-    <p class="legenda">Texto da imagem 1</p>
-    <p class="legenda">Texto da imagem 2</p>
-    <p class="legenda">Texto da imagem 3</p>
+    <img src="../src/assets/img/combinado.jpg"  class="slide ativo" alt="Imagem 1">
+    <img src="../src/assets/img/sobremesa.jpg" class="slide" alt="Imagem 2">
+    <img src="../src/assets/img/drinks.jpg" class="slide" alt="Imagem 3">
+    <p class="legenda">Combinados</p>
+    <p class="legenda">Sobremesa</p>
+    <p class="legenda">Drinks</p>
   </div>
+
+  <main class="main">
+
+    <div class="delivery">
+      <h1 class="titulo">Delivery</h1>
+      <p>Inspirado na tradição japonesa com ingredietes importados, nosso menu te leva ao Japão na primeira mordida. Receba nossos pratos na sua casa.</p>
+    </div>
+    <h1 class="titulo">Endereços</h1>
+      <!-- UNIDADE MORUMBI -->
+    <article class="unidades">
+      <img src="../src/assets/img/restaurante-japones-morumbi.jpg" alt="Restaurante Japonês Morumbi" class="imagem">
+        <div class="infos">
+          <h2>Tomodachi Morumbi</h2>
+          <p>R. Américo Alves Pereira Filho, 461 Real Parque, São Paulo</p>
+          <h2>Horário</h2>
+          <p>Segunda a sexta: 12h - 15h e 18h30 - 23h Sábado,Domingo e feriados: 12h- 23h</p>>
+          <p>reservas</p>
+        </div>
+      </article>
+      <!-- UNIDADE MOOCA -->
+    <article class="unidades">
+      <div class="infos">
+        <h2>Tomodachi Mooca</h2>
+        <p>R. do Oratório, 1545 - Mooca, São Paulo</p>
+        <h2>Horário</h2>
+        <p>Segunda a sexta: 12h - 15h e 18h30 - 22h Sábado,Domingo e feriados: 13h- 22h</p>>
+        <p>reservas</p>
+      </div>
+      <img src="../src/assets/img/restaurante-japones-mooca.jpg" alt=""> 
+    </article>
+  </main>
+    <!-- FOOTER -->
+  <footer class="footer">
+    <!-- logo -->
+    <article class="logo">
+      <img id="imgfooter" src="../src/assets/img/logo.png" alt="Logo">
+      <p>Copyright © 2025 Tomodachi</p>
+    </article>
+    <!-- contato -->
+    <article class="contato">
+      <p>Telefone:</p>
+      <p>(11)9999-1111</p>
+      <br> 
+      <p>Email:</p>
+      <p>tomodachi@contato.com.br</p>
+    </article>
+    <!-- redes -->
+     <article class="redes">
+      <img src="../src/assets/img/redes/instagram.png" alt="Instagram" width="2.5rem">
+      <a></a>
+      <br>
+      <img src="../src/assets/img/redes/facebook.png" alt="Facebook" width="2.5rem">
+      <a href="https://www.facebook.com/?locale=pt_BR">Facebook</a>
+      <br>
+      <img src="../src/assets/img/redes/twitter.jpg" alt="X" width="2.5rem">
+      <a href="https://x.com/?lang=pt">X</a>
+      
+     </article>
+  </footer>
+
   <script src="../src/JS/home.js"></script>
 </body>
 </html>
