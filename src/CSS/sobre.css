@@ -82,11 +82,11 @@ main {
   position: absolute; 
   top: 50%; 
   left: 50%; 
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -25%); 
   color: black; 
   font-size: 1.5rem; 
   margin-top: 80px; 
-  padding: 10px 20px; 
+  
   border-radius: 10px;
 }
 
@@ -148,6 +148,13 @@ main {
 }
 .h2Sobre {
     margin-top: 20px;
+}
+
+#primeiroTitulo {
+  display: flex;
+  flex-direction: column;
+  
+  
 }
 
 #titulosTexto{
@@ -224,4 +231,17 @@ main {
   .rede-item {
     justify-content: center;
   }
+   .containerSobreNos {
+    padding-top: 80px; /* Espaço para o header */
+    position: static;
+  }
+  .texto-sobreposto {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    
+    padding: 10px;
+  }
+  
 }
