@@ -2,16 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: "Outfit", sans-serif;
 }
-/* HEADER */
+  /* HEADER */
 .header {
-  background:#043454;
+  background: #043454;
   padding: 15px 40px;
-  z-index: 10;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  top: 0;
 }
 
 .navbar {
@@ -48,6 +46,7 @@
 .menu li a:hover {
   color: #f2a41f;
 }
+
 /* Link ativo */
 #ativo {
   color: #f2a41f;
@@ -57,95 +56,117 @@
 /* final header */
 
 
+
+/* TÍTULO PRINCIPAL */
 .titulo-contato {
   text-align: center;
-  font-size: 250%;
-  margin-top: 100px;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin: 2% auto 1%;
   color: #033e5e;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
-.form-container h1 {
-  font-weight: 200;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #043454;
-  margin-top: 25%;
-  
-}
+/* FORMULÁRIO */
 .form-container {
-  background-color: #fff;
-  width: 80%; /* Largura do formulário */
-  max-width: 40%; /* Limita para não ficar gigante em telas grandes */
-  margin: 5% auto;
-  padding: 5%;
-  border-radius: 2%;
-   /* Borda brilhante */
-
- border: 2px solid #043454;
-
-  /* Efeito neon com múltiplas sombras */
-  box-shadow:
-    0 0 20px #043454,
-    0 0 40px #043454,
-    0 0 60px #043454;
-  box-sizing: border-box;
-  
-   
+  background-color: #f5fffb;
+  width: 80%;
+  max-width: 600px;
+  min-width: 320px;
+  margin: 3% auto;
+  border-radius: 20px;
+  border: 2px solid #043454;
+  box-shadow: 0 0 20px #043454;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
-main{
-    border: 10%;
-    padding-top: 100px;
-
+/* MAIN */
+main {
+  padding-top: 10%;
+  background-color: #f5fffb;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
+/* LABEL */
 form label {
   display: block;
   text-align: left;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin: 1rem 0 0.5rem;
   font-weight: bold;
   color: #043454;
-
- 
-
-
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
+/* INPUTS & TEXTAREA */
 form input,
 form textarea {
   width: 100%;
-  padding: 3%;
-  margin-top: 3%;
-  border: 1% solid #ccc;
-  margin-bottom: 4%;
-  font-size: 90%;
-  box-sizing: border-box;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 25px; 
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: border 0.3s;
 }
 
+form input:focus,
+form textarea:focus {
+  border-color: #043454;
+  outline: none;
+}
+
+/* TEXTAREA ALTURA */
 form textarea {
-  height: 150px;        
-  resize: none;         
-  
+  min-height: 150px;
+  resize: none;
 }
 
+/* BOTÃO */
 button {
   background-color: #033e5e;
   color: #f2a41f;
-  padding: 3% 10%;
+  padding: 1rem 2rem; 
+  font-size: 1.5rem; 
+  cursor: pointer;
   border: none;
-  border-radius: 5%;
-  cursor: pointer;
-  margin: 15% auto 0;
-  margin-left: 35;
+  border-radius: 15px;
+  max-width: 250px;
+  width: 100%;
+  margin: 2rem auto 0;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #022b45;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 1.5rem;
+    border-width: 1px;
+    box-shadow: 0 0 20px rgba(4, 52, 84, 0.8); 
+  }
 }
 
 
+  button {
+    font-size: 1.3rem; 
+    padding: 0.9rem 1.8rem;
+  }
+
+  main {
+    padding-top: 6rem; 
+  }
 
