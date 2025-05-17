@@ -91,7 +91,7 @@ main {
 
 .imgTextoSobreNos{
   display: block;
-  margin: 20px auto; 
+   
   max-width: 50%;
   height: auto;
     
@@ -209,10 +209,7 @@ main {
     flex-direction: column;
     align-items: center;
   }
-  .lado-img, .lado-texto {
-    width: 100%;
-    max-width: 100%;
-  }
+
   .imgTextoSobreNos {
     max-width: 90vw;
     height: auto;
@@ -247,5 +244,26 @@ main {
     
     padding: 10px;
   }
+  .menu {
+    font-size: 1rem;
+    gap: 5px;
   
+  }
+  .navbar {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  .menu {
+    font-size: 1rem;
+    gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+  }
+  .menu li {
+    text-align: right;
+  }
+  .menu li a {
+    font-size: 0.8rem;
+  }
 }
