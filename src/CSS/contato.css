@@ -72,7 +72,7 @@
   width: 80%;
   max-width: 600px;
   min-width: 320px;
-  margin: 3% auto;
+  margin: 1% auto;
   border-radius: 20px;
   border: 2px solid #043454;
   box-shadow: 0 0 20px #043454;
@@ -161,7 +161,7 @@ button:hover {
    /* Header */
   .menu {
     font-size: 1rem;
-    gap: 5px;
+    gap: 2px;
   
   }
   .navbar {
@@ -170,7 +170,7 @@ button:hover {
   }
   .menu {
     font-size: 1rem;
-    gap: 5px;
+    gap: 2px;
     justify-content: flex-end;
     align-items: center;
     text-align: right;
@@ -179,7 +179,7 @@ button:hover {
     text-align: right;
   }
   .menu li a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
