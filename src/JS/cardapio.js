@@ -10,6 +10,15 @@ function filtrarCardapio(categoria, animar = true) {
     }
   });
 
+  const botoes = document.querySelectorAll('.navcardapio button');
+  botoes.forEach(btn => {
+    if (btn.getAttribute('data-categoria') === categoria) {
+      btn.classList.add('ativo');
+    } else {
+      btn.classList.remove('ativo');
+    }
+  });
+
   setTimeout(() => {
     pratos.forEach((prato) => {
       const cat = prato.getAttribute('data-categoria');

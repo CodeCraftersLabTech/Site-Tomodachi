@@ -23,57 +23,57 @@
   </header>
     <!-- imagem do topo -->
   <div id="topo">
-    <!-- <img id="imagemTopo" src="../src/assets/img/comida-japonesa.jpg" alt="pratos da culinaria japonesa"> -->
-    <nav class="navcardapio">
-      <ul>
-        <li><button onclick="filtrarCardapio('menu')">Menu Principal</button></li>
-        <li><button onclick="filtrarCardapio('sobremesa')">Sobremesa</button></li>
-        <li><button onclick="filtrarCardapio('drinks')">Drinks</button></li>
-      </ul>
-    </nav>
-  </div>  
+  </div>   
+  <nav class="navcardapio">
+    <ul>
+      <li><button data-categoria="menu" onclick="filtrarCardapio('menu')" id="menu" >Menu Principal</button></li>
+      <li><button data-categoria="sobremesa" onclick="filtrarCardapio('sobremesa')"id="sobremesa" >Sobremesa</button></li>
+      <li><button data-categoria="drinks" onclick="filtrarCardapio('drinks')" id="bebidas">Bebidas</button></li>
+    </ul>
+  </nav>
+   
   <main>
     <!-- filtro cardapio -->
     
     <!-- CARDAPIO -->
      <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/menu principal/carpaccio_salmão.avif" alt=""  />
+      <img src="../src/assets/img/cardapio/menu/carpaccio_salmão.avif" alt=""  />
       <h3>Carpaccio de Salmão</h3>
       <p>R$ 89,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/menu principal/sashimi_salmão.jpg" alt="" />
+      <img src="../src/assets/img/cardapio/menu/sashimi_salmão.jpg" alt="" />
       <h3>Sashimi de Salmão</h3>
       <p>R$ 89,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/menu principal/hotroll_salmao.jpg" alt="" />
+      <img src="../src/assets/img/cardapio/menu/hotroll_salmao.jpg" alt="" />
       <h3>Sunomono</h3>
       <p>R$ 89,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/menu principal/sushiAtum_foieGras.jpg" alt="" />
+      <img src="../src/assets/img/cardapio/menu/sushiAtum_foieGras.jpg" alt="" />
       <h3>Sushi de Atum e Foie Grass</h3>
       <p>R$ 89,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/gohan.jpg" alt="" />
+      <img src="../src/assets/img/cardapio/menu/gohan.jpg" alt="" />
       <h3>Gohan</h3>
       <p>R$ 89,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/hotroll_filadélfia.jpg" alt="" />
+      <img src="../src/assets/img/cardapio/menu/hotroll_filadélfia.jpg" alt="" />
       <h3>Hotroll Filadélfia</h3>
       <p>R$ 89,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
-      <img src="../src/assets/img/cardapio/hotroll_salmao.jpg" alt="" />
+      <img src="../src/assets/img/cardapio/menu/hotroll_salmao.jpg" alt="" />
       <h3>Hotroll Salmão</h3>
       <p>R$ 89,99</p>
     </article>
