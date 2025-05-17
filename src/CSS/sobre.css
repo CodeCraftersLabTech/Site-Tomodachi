@@ -233,7 +233,7 @@ main {
     justify-content: center;
   }
    .containerSobreNos {
-    padding-top: 80px; /* Espaço para o header */
+    padding-top: 80px; 
     position: static;
   }
   .texto-sobreposto {
@@ -244,6 +244,7 @@ main {
     
     padding: 10px;
   }
+   /* Header */
   .menu {
     font-size: 1rem;
     gap: 5px;
@@ -266,4 +267,3 @@ main {
   .menu li a {
     font-size: 0.8rem;
   }
-}
