@@ -105,7 +105,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 20px;
+
     font-family: FontePrincipal;
     color: black;
     
@@ -114,9 +114,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 40px;
+    gap: 20px;
     border-radius: 10px;
-    padding: 20px;
+
     width: 100%;
     max-width: 1300px;
     margin: 30px auto 0 auto;
