@@ -151,12 +151,35 @@ button:hover {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .form-container {
     width: 90%;
     padding: 1.5rem;
     border-width: 1px;
     box-shadow: 0 0 20px rgba(4, 52, 84, 0.8); 
+  }
+   /* Header */
+  .menu {
+    font-size: 1rem;
+    gap: 5px;
+  
+  }
+  .navbar {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  .menu {
+    font-size: 1rem;
+    gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+  }
+  .menu li {
+    text-align: right;
+  }
+  .menu li a {
+    font-size: 0.8rem;
   }
 }
 
@@ -169,4 +192,4 @@ button:hover {
   main {
     padding-top: 6rem; 
   }
-
+ 
