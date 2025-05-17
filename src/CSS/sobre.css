@@ -85,9 +85,8 @@ main {
   transform: translate(-50%, -25%); 
   color: black; 
   font-size: 1.5rem; 
-  margin-top: 80px; 
-  
-  border-radius: 10px;
+  margin-top: 80px;   
+  border-radius: 1000px;
 }
 
 .imgTextoSobreNos{
@@ -106,20 +105,25 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 20px;
+
     font-family: FontePrincipal;
     color: black;
+    
 }
 .conteudo {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 40px;
+    gap: 20px;
     border-radius: 10px;
-    padding: 20px;
+
     width: 100%;
     max-width: 1300px;
     margin: 30px auto 0 auto;
+}
+
+.conteudo-invertido {
+    flex-direction: row;
 }
 
 .lado-img {
