@@ -269,6 +269,11 @@ main {
 .rede-item a{
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.contato p{
+  font-size: 20.8px;
 }
 
 .hamburger {

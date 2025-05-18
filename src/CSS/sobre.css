@@ -6,11 +6,12 @@
   box-sizing: border-box;
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
-  /* HEADER */
+/* HEADER */
 .header {
   background: #043454;
   padding: 15px 40px;
-  position: absolute;
+  z-index: 10;
+  position: relative;
   width: 100%;
 }
 
@@ -33,7 +34,7 @@
 /* Menu */
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 5rem;
   list-style: none;
 }
 
@@ -202,9 +203,14 @@ main {
   margin-bottom: 15px;
 }
 
+.contato p{
+  font-size: 20.8px;
+}
+
 .rede-item a{
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 @media (max-width: 900px) {
   .conteudo {
@@ -277,11 +283,5 @@ main {
     padding: 0;
     margin: 0;
   }
-  .menu li {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .menu li a {
-    font-size: 1rem;
-  }
+ 
 }
