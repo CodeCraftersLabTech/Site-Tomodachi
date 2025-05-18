@@ -159,6 +159,8 @@ main {
 #primeiroTitulo {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0px;
+  font-size: 3rem;
   
   
 }
@@ -169,7 +171,7 @@ main {
 }
 
 #paragTexto{
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* FOOTER */
