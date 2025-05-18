@@ -80,7 +80,7 @@ body{
 .navcardapio{
   position: relative;
   display: flex;
-  color: #ffffff;
+  color: white;
   margin-top: 292px;
   padding: 2rem;
   width: 74%;
@@ -105,7 +105,7 @@ body{
   padding: 24px;
   width: 13rem;
   border-radius: 2rem;
-  color:#ffffff;
+  color:white;
   border: none;
 }
 
@@ -169,7 +169,7 @@ main {
   gap: 10px;
   width: 270px;
   height: 310px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 1px 1px 10px #085283;
   border-radius: 5%; 
   overflow: hidden;     
