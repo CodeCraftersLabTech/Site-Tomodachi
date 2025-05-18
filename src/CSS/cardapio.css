@@ -77,7 +77,7 @@ body{
 .navcardapio{
   position: relative;
   display: flex;
-  color: #ffffff;
+  color: white;
   margin-top: 292px;
   padding: 2rem;
   width: 74%;
@@ -102,7 +102,7 @@ body{
   padding: 24px;
   width: 13rem;
   border-radius: 2rem;
-  color:#ffffff;
+  color:white;
   border: none;
 }
 
@@ -166,7 +166,7 @@ main {
   gap: 10px;
   width: 270px;
   height: 310px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 1px 1px 10px #085283;
   border-radius: 5%; 
   overflow: hidden;     
@@ -268,22 +268,22 @@ main {
   text-decoration: none;
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 20;
+}
+
 @media (max-width: 900px) {
-  .conteudo {
-    flex-direction: column;
-    align-items: center;
-  }
-  .lado-img, .lado-texto {
-    width: 100%;
-    max-width: 100%;
-  }
-  .imgTextoSobreNos {
-    max-width: 90vw;
-    height: auto;
-    min-height: unset;
-    max-height: 300px;
-  }
-  
+
+  /* footer  */
   .footer {
     flex-direction: column;
     align-items: center;
@@ -321,5 +321,64 @@ main {
   }
   .menu li a {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .navcardapio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    padding: 2rem;
+    margin-top: 292px;
+    height: auto;
+    background: #5a85a1;
+    border-radius:2rem 2rem 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+  }
+  .navcardapio ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    background: none;
+    position: static;
+    padding: 0;
+  }
+  .navcardapio.open ul {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #5a85a1;
+    border-radius: 0 0 2rem 2rem;
+    z-index: 101;
+    padding: 0;
+  }
+  .navcardapio button{
+    width: 20rem;
+  }
+  
+.navcardapio.open + main {
+    margin-top: 18rem; 
+    transition: 0.3s;
+  }
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
   }
 }
