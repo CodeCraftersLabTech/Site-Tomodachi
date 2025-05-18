@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../src/CSS/cardapio.css">
 </head>
 <body>
-    <!-- Header -->
+  <!-- Header -->
   <header class="header">
   <nav class="navbar">
     <div class="logo">
@@ -15,7 +15,7 @@
     </div>
     <ul class="menu">
       <li><a href="home.html">Home</a></li>
-      <li><a class="ativo" href="#">Cardápio</a></li>
+      <li><a id ="ativo"href="#">Cardápio</a></li>
       <li><a href="sobre.html">Sobre Nós</a></li>
       <li><a href="contato.html">Contato</a></li>
     </ul>
@@ -25,6 +25,7 @@
   <div id="topo">
   </div>   
   <nav class="navcardapio">
+    <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
     <ul>
       <li><button data-categoria="menu" onclick="filtrarCardapio('menu')" id="menu" >Menu Principal</button></li>
       <li><button data-categoria="sobremesa" onclick="filtrarCardapio('sobremesa')"id="sobremesa" >Sobremesa</button></li>
@@ -33,7 +34,6 @@
   </nav>
    
   <main>
-    <!-- filtro cardapio -->
     
     <!-- CARDAPIO -->
      <article class="cardPratos" data-categoria="menu">
@@ -45,184 +45,184 @@
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/sashimi_salmão.jpg" alt="" />
       <h3>Sashimi de Salmão</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 78,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/sashimiAtum_toast.jpg" alt="" />
       <h3>Sashimi de Atum Toast</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 88,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/tartar_atum.jpg" alt="" />
       <h3>Tartar de Atum</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 99,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/hotroll_salmao.jpg" alt="" />
       <h3>Hot roll de Salmão</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 69,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/hotroll_filadélfia.jpg" alt="" />
       <h3>Hot roll Filadélfia</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 65,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/sushiAtum_foieGras.jpg" alt="" />
       <h3>Sushi de Atum e Foie Grass</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 109,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/uramakiEbiten.jpg" alt="" />
       <h3>Uramaki Ebiten</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 74,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/uramakiEnguia_avocado.avif" alt="" />
       <h3>Uramaki de Enguia com Avocado</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 79,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/uramakiSalmão_skin.jpg" alt="" />
       <h3>Uramaki de Salmão</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 84,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/robata-de-vieira-canadense-com-salmao.webp" alt="" />
       <h3>Robata de Vieira com Salmão</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 82,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/robata_abobrinha.jpg" alt="" />
       <h3>Robata de Abobrinha</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 65,99</p>
     </article>
     
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/robataShimeji_bacon.jpg" alt="" />
       <h3>Robata de Shimeji com Bacon</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 65,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/tempura_berinjela.webp" alt="" />
       <h3>Tempura de Berinjela</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 59,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/gohan.jpg" alt="" />
       <h3>Gohan</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 50,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="menu">
       <img src="../src/assets/img/cardapio/menu/sunomono.jpg" alt="" />
       <h3>Sunomono</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 55,99</p>
     </article>
 
     <!-- SOBREMESA -->
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/anmitsu.jpg" alt="" />
       <h3>Anmitsu</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 19,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/daikifu.jpg" alt="" />
       <h3>Daikifu</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 15,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/dorayaki.webp" alt="" />
       <h3>Dorayaki</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 69,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/hanaume.jpg" alt="" />
       <h3>Hanaume</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 39,99</p>
     </article> 
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/katen.webp" alt="" />
       <h3>Katen</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 44,99</p>
     </article>    
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/choux_cream.jpg" alt="" />
       <h3>Choux Cream</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 39,99</p>
     </article>   
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/tempura_sorvete.jpg" alt="" />
       <h3>Tempura de Sorvete</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 29,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/matcha_anmitsu.jpeg" alt="" />
       <h3>Anmitsu de Matcha </h3>
-      <p>R$ 89,99</p>
+      <p>R$ 29,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/sorvete_de_matcha.webp" alt="" />
       <h3>Sorvete de Matcha</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 25,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="sobremesa">
       <img src="../src/assets/img/cardapio/sobremesas/cheesecake_macha.jpg" alt="" />
       <h3>Cheesecake de Matcha</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 15,99</p>
     </article> 
 
     <!-- DRINKS -->
     <article class="cardPratos" data-categoria="drinks">
       <img src="../src/assets/img/cardapio/bebidas/matcha.jpg" alt="" />
       <h3>Matcha</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 19,99</p>
     </article>
 
 
     <article class="cardPratos" data-categoria="drinks">
       <img src="../src/assets/img/cardapio/bebidas/mojito.jpg" alt="" />
       <h3>Mojito</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 49,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="drinks">
       <img src="../src/assets/img/cardapio/bebidas/gastronomia-bebidas-receita-drinque-yuzu-saque.avif" alt="" />
       <h3>Yuzo Sour</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 59,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="drinks">
       <img src="../src/assets/img/cardapio/bebidas/umeshu.jpg" alt="" />
       <h3>Umeshu</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 59,99</p>
     </article>
 
     <article class="cardPratos" data-categoria="drinks">
       <img src="../src/assets/img/cardapio/bebidas/ranume.webp" alt="" />
       <h3>Ranume Strawberry</h3>
-      <p>R$ 89,99</p>
+      <p>R$ 19,99</p>
     </article>
 
   </main>

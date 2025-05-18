@@ -34,7 +34,7 @@
 /* Menu */
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 5rem;
   list-style: none;
 }
 
@@ -233,6 +233,10 @@ main{
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+}
+
+.contato p{
+  font-size: 20.8px;
 }
 
 .rede-item a{

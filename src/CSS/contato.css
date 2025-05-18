@@ -6,11 +6,12 @@
   box-sizing: border-box;
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
-  /* HEADER */
+/* HEADER */
 .header {
   background: #043454;
   padding: 15px 40px;
-  position: absolute;
+  z-index: 10;
+  position: relative;
   width: 100%;
 }
 
@@ -33,7 +34,7 @@
 /* Menu */
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 5rem;
   list-style: none;
 }
 
@@ -62,10 +63,11 @@
 /* TÍTULO PRINCIPAL */
 .titulo-contato {
   text-align: center;
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-size: 3.5rem;
+  font-style: bold;
   margin: 2% auto 1%;
   color: #033e5e;
-  font-weight: 300;
+
 }
 
 /* FORMULÁRIO */
@@ -146,7 +148,7 @@ button {
   width: 100%;
   margin: 2rem auto 0;
   text-align: center;
-  transition: background-color 0.3s ease;
+  font-style: bold;
 }
 
 button:hover {
