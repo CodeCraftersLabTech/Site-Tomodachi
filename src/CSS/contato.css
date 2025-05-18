@@ -6,12 +6,11 @@
   box-sizing: border-box;
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
-/* HEADER */
+  /* HEADER */
 .header {
   background: #043454;
   padding: 15px 40px;
-  z-index: 10;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
@@ -34,7 +33,7 @@
 /* Menu */
 .menu {
   display: flex;
-  gap: 5rem;
+  gap: 40px;
   list-style: none;
 }
 

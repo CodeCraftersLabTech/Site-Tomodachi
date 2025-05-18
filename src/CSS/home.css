@@ -136,7 +136,7 @@ main{
 }
 
 .delivery p{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #043454;
   margin-bottom: 20px;
 }
@@ -163,17 +163,18 @@ main{
 }
 
 .infos{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: left; 
 }
 
 .unidades h2{
   margin-bottom: 10px;
   margin-top: 5px;
+  color:#043454;
 }
 
 .unidades img{
-  width: 350px;
+  width: 400px;
   height: auto;
 }
 
@@ -190,18 +191,27 @@ main{
 }
 
 .infos2{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: right; 
 }
 
 .unidadesDireita h2{
   margin-bottom: 10px;
   margin-top: 5px;
+  color:#043454;
 }
 
 .unidadesDireita img{
-  width: 350px;
+  width: 400px;
   height: auto;
+}
+.reservas{
+  font-size: 1.4rem;
+}
+.reservas:hover{
+  cursor: pointer;
+  color:#043454;
+  font-weight: bold;
 }
 
 /* FOOTER */
